@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StreamFlix — Pricing Plans</title>
+  <meta name="description" content="Responsive pricing card section for a streaming platform, built with HTML, CSS, and JavaScript." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="pricing__header">
+    <div class="brand">
+      <span class="brand__mark" aria-hidden="true">▶</span>
+      StreamFlix
+    </div>
+    <h1>Choose the plan that's right for you</h1>
+    <p>Watch unlimited movies and TV shows on any device. Switch plans or cancel anytime — no hidden fees.</p>
+
+    <!-- Billing toggle -->
+    <div class="billing">
+      <span class="billing__label active" id="labelMonthly">Monthly</span>
+      <button class="switch" id="billingSwitch" role="switch" aria-checked="false" aria-label="Toggle yearly billing"></button>
+      <span class="billing__label" id="labelYearly">Yearly</span>
+      <span class="save-badge">Save 20%</span>
+    </div>
+  </header>
+
+  <!-- ================= PRICING CARDS ================= -->
+  <section class="pricing" aria-label="Pricing plans">
+
+    <!-- Basic -->
+    <article class="plan">
+      <h2 class="plan__name">Basic</h2>
+      <p class="plan__tagline">Great for casual viewers who want the essentials.</p>
+
+      <div class="plan__price">
+        <span class="plan__currency">$</span>
+        <span class="plan__amount" data-monthly="6.99" data-yearly="5.59">6.99</span>
+        <span class="plan__period">/month</span>
+      </div>
+      <p class="plan__note" data-monthly="Billed monthly" data-yearly="Billed $67.08 yearly">Billed monthly</p>
+
+      <a href="#" class="plan__cta">Get Basic</a>
+
+      <ul class="plan__features">
+        <li><span class="check" aria-hidden="true">✓</span> 720p HD streaming</li>
+        <li><span class="check" aria-hidden="true">✓</span> Watch on 1 device</li>
+        <li><span class="check" aria-hidden="true">✓</span> Ad-supported</li>
+        <li class="off"><span class="check" aria-hidden="true">✕</span> Downloads</li>
+        <li class="off"><span class="check" aria-hidden="true">✕</span> 4K Ultra HD</li>
+      </ul>
+    </article>
+
+    <!-- Standard (featured) -->
+    <article class="plan plan--featured">
+      <span class="plan__badge">Most Popular</span>
+      <h2 class="plan__name">Standard</h2>
+      <p class="plan__tagline">The best balance of price and quality for most people.</p>
+
+      <div class="plan__price">
+        <span class="plan__currency">$</span>
+        <span class="plan__amount" data-monthly="12.99" data-yearly="10.39">12.99</span>
+        <span class="plan__period">/month</span>
+      </div>
+      <p class="plan__note" data-monthly="Billed monthly" data-yearly="Billed $124.68 yearly">Billed monthly</p>
+
+      <a href="#" class="plan__cta">Get Standard</a>
+
+      <ul class="plan__features">
+        <li><span class="check" aria-hidden="true">✓</span> 1080p Full HD streaming</li>
+        <li><span class="check" aria-hidden="true">✓</span> Watch on 2 devices</li>
+        <li><span class="check" aria-hidden="true">✓</span> Ad-free experience</li>
+        <li><span class="check" aria-hidden="true">✓</span> Downloads on 2 devices</li>
+        <li class="off"><span class="check" aria-hidden="true">✕</span> 4K Ultra HD</li>
+      </ul>
+    </article>
+
+    <!-- Premium -->
+    <article class="plan">
+      <h2 class="plan__name">Premium</h2>
+      <p class="plan__tagline">Ultimate quality with everything unlocked.</p>
+
+      <div class="plan__price">
+        <span class="plan__currency">$</span>
+        <span class="plan__amount" data-monthly="19.99" data-yearly="15.99">19.99</span>
+        <span class="plan__period">/month</span>
+      </div>
+      <p class="plan__note" data-monthly="Billed monthly" data-yearly="Billed $191.88 yearly">Billed monthly</p>
+
+      <a href="#" class="plan__cta">Get Premium</a>
+
+      <ul class="plan__features">
+        <li><span class="check" aria-hidden="true">✓</span> 4K Ultra HD + HDR</li>
+        <li><span class="check" aria-hidden="true">✓</span> Watch on 4 devices</li>
+        <li><span class="check" aria-hidden="true">✓</span> Ad-free experience</li>
+        <li><span class="check" aria-hidden="true">✓</span> Downloads on 6 devices</li>
+        <li><span class="check" aria-hidden="true">✓</span> Spatial audio</li>
+      </ul>
+    </article>
+
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <p class="pricing__footer">
+    All plans include a 30-day free trial. <a href="#">Compare all features →</a>
+  </p>
+
+  <script src="script.js"></script>
+</body>
+</html>
